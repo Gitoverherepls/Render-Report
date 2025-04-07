@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Updates</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="games.css">
     <link rel="icon" type="image/png" href="/render/favicon.png" sizes="32x32">
 </head>
 <body>
@@ -13,11 +13,11 @@
         <h1 class="logo">Game Updates</h1>
         <nav>
             <ul>
-                <li><a href="/render/home.html">Home</a></li>
+                <li><a href="/home.html">Home</a></li>
                 <li><a href="/upcoming.html">News</a></li>
-                <li><a href="/Dakarai/esports.html">Esports</a></li>
-                <li><a href="/gen/games.html"class= "active">Games</a></li>
-                <li><a href="/ghen/about.html/aboutus.html">About Us</a></li>
+                <li><a href="/esports.html">Esports</a></li>
+                <li><a href="/games.html"class= "active">Games</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
             </ul>
         </nav>
     
@@ -26,6 +26,14 @@
     <section class="hero">
         <h1>Welcome to Game Updates</h1>
         <p>Stay updated on the latest gaming news, tournaments, and top players.</p>
+        <section id="color-theme" style="text-align: center; padding: 20px;">
+            <h2>Customize Background</h2>
+            <button onclick="changeBackgroundColor('white')">White</button>
+            <button onclick="changeBackgroundColor('lightblue')">Light Blue</button>
+            <button onclick="changeBackgroundColor('lightgreen')">Light Green</button>
+            <button onclick="changeBackgroundColor('lightgray')">Light Gray</button>
+            <button onclick="changeBackgroundColor('black')">Black</button>
+       
     </section>
 
     <!-- List of Games Section -->
@@ -232,6 +240,16 @@
     <footer>
         <p>&copy; 2025 Game Updates. All rights reserved.</p>
     </footer>
-
+</section> <script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+        // Optional: Change text color for visibility
+        if (color === 'black') {
+            document.body.style.color = 'white';
+        } else {
+            document.body.style.color = 'black';
+        }
+    }
+</script>
 </body>
 </html>

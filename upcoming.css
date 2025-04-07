@@ -1,0 +1,345 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+    margin-left: 220px; /* Adjust content to account for the sticky aside */
+
+    .game1
+    {
+        margin-bottom: 170px;
+        position: relative;
+        .img_game1
+        {
+            float: left;
+            padding-right:20px;
+        }
+
+                
+        .ul1
+        {
+            margin-bottom: 120px;
+        }
+        
+        .april
+        {
+            font-weight: bold;
+            width:621.9px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game2
+    {
+        margin-bottom: 200px;
+        
+        position: relative;
+        .img_game2
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+
+        .ul2
+        {
+            margin-bottom: 150px;
+        }
+        
+        .may
+        {
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game3
+    {
+        margin-bottom: 200px;
+        
+        position: relative;
+        .img_game3
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+        
+        .ul3
+        {
+            margin-bottom: 150px;
+        }
+
+        .june
+        {
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game4
+    {
+        margin-bottom: 230px;
+
+        position: relative;
+        .img_game4
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+        .ul4
+        {
+            margin-bottom: 180px;
+        }
+        .july
+        {
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game5
+    {
+        margin-bottom: 200px;
+
+        position: relative;
+        .img_game5
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+
+        .ul5
+        {
+            margin-bottom: 150px;
+        }
+        
+        .august
+        {
+            
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game6
+    {
+        margin-bottom: 255px;
+
+        position: relative;
+        .img_game6
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+
+        .ul6
+        {
+            margin-bottom: 210px;
+        }
+        
+        .september
+        {
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+
+    .game7
+    {
+        margin-bottom: 250px;
+
+        position: relative;
+        .img_game7
+        {
+            text-align: right;
+            float: left;
+            padding-right:20px;
+        }
+
+        .ul7
+        {
+            margin-bottom: 205px;
+        }
+        
+        .october
+        {
+            font-weight: bold;
+            width:628px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            margin-bottom: 1px;
+            float:left;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+header nav ul {
+    text-align: right;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+a.active {
+    color: #4caf50;
+    font-weight: bold;
+    text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4caf50;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #4caf50, #2e7d32);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+hero p {
+    font-size: 1.2rem;
+}
+
+grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust card size */
+    gap: 2rem; /* Increase the gap between cards */
+    padding: 2rem; /* Add more padding for layout */
+}
+
+.card {
+    width: auto; /* Adjust width to fit the content dynamically */
+    max-width: 600px; /* Set a maximum width for consistency */
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #333;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card img {
+    width: 100%; /* Ensure the image fits within the card */
+    height: 250px; /* Increase the height of the images */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    border-radius: 8px; /* Match the card's border radius */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 1rem;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+aside ul li a:hover {
+    color: #4caf50;
+}
