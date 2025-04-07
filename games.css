@@ -102,7 +102,11 @@ nav button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.7); /* Focus ring with green hue */
 }
-
+a.active {
+    color: #4caf50;
+    font-weight: bold;
+                    text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50;
+}
 /* Section for Each Game and Content */
 section {
     margin: 2rem;
